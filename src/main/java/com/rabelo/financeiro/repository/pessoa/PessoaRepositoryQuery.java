@@ -8,6 +8,7 @@ import com.rabelo.financeiro.repository.filter.PessoaFilter;
 
 public interface PessoaRepositoryQuery {
 	
+	
 	public Page<Pessoa> filtrar(Pageable pageable, PessoaFilter pessoaFilter);
 
 }

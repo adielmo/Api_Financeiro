@@ -17,6 +17,7 @@ public class CustomTokenEnhacer implements TokenEnhancer {
 		UsuarioSistema usuarioSistema =  (UsuarioSistema) authentication.getPrincipal();
 		
 		Map<String, Object> addInf = new HashMap<>();
+		
 		addInf.put("nome", usuarioSistema.getUsuario().getNome());
 		
 		((DefaultOAuth2AccessToken)accessToken).setAdditionalInformation(addInf);

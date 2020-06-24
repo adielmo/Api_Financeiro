@@ -22,7 +22,7 @@ public class ResumoLancamento {
 
 	public ResumoLancamento(Long codigo, String descricao, LocalDate dataVencimento, LocalDate dataPagamento,
 			BigDecimal valor, TipoLancamento tipo, String categoria, String pessoa) {
-		super();
+		
 		this.codigo = codigo;
 		this.descricao = descricao;
 		this.dataVencimento = dataVencimento;

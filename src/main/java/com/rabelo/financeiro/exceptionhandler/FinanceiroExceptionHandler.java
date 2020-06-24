@@ -41,6 +41,7 @@ public class FinanceiroExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	/* Tratando Validações da Entidade, @Valid, @NotNull */
+	
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {

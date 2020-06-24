@@ -32,12 +32,11 @@ public class Usuario {
 	private String senha;
 
 	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "usuario_permissao", joinColumns = @JoinColumn(name = "codigo_usuario"),
-	 inverseJoinColumns = @JoinColumn(name = "codigo_permissao"))
+	@JoinTable(name = "usuario_permissao", joinColumns = @JoinColumn(name = "codigo_usuario"), inverseJoinColumns = @JoinColumn(name = "codigo_permissao"))
 	private List<Permissao> permissoes = new ArrayList<>();
 
 	public Long getCodigo() {
-		return codigo;
+		return this.codigo;
 	}
 
 	public void setCodigo(Long codigo) {
@@ -53,7 +52,7 @@ public class Usuario {
 	}
 
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
 
 	public void setEmail(String email) {
@@ -61,7 +60,7 @@ public class Usuario {
 	}
 
 	public String getSenha() {
-		return senha;
+		return this.senha;
 	}
 
 	public void setSenha(String senha) {
@@ -69,7 +68,7 @@ public class Usuario {
 	}
 
 	public List<Permissao> getPermissoes() {
-		return permissoes;
+		return this.permissoes;
 	}
 
 	public void setPermissoes(List<Permissao> permissoes) {
