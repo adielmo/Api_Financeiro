@@ -123,7 +123,7 @@ public class FinanceiroExceptionHandler extends ResponseEntityExceptionHandler {
 		}
 
 		public String getMensagemUsuario() {
-			return mensagemUsuario;
+			return this.mensagemUsuario;
 		}
 
 		public String getMensagemDesenvolvedor() {
