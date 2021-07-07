@@ -18,8 +18,13 @@ import org.springframework.stereotype.Component;
 import com.rabelo.financeiro.config.property.FinanceiroApiProperty;
 
 //@Component
-//@Order(Ordered.HIGHEST_PRECEDENCE)
+//@Order(Ordered.HIGHEST_PRECEDENCE) 
 public class CorsFilter{// implements Filter {	
+	
+	/**
+	 * Foi Criado um Bean na Class ResourceServerConfig
+	 * com isso essa Class foi Depreciada
+	 */
 	  
 	@Autowired
 	private FinanceiroApiProperty financeiroApiProperty;
